@@ -34,7 +34,7 @@ public class IngredientTest {
     }
 
     @Test
-    public void TestCreateIngredient() {
+    public void testCreateIngredient() {
         Ingredient ingredient = new Ingredient(type, name, price);
         assertEquals("Некорректное название ингридиента", name, ingredient.getName());
         assertEquals("Некорректный прайс для ингридиента", price, ingredient.getPrice(), 0.0f);

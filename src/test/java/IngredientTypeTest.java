@@ -5,12 +5,12 @@ import static org.junit.Assert.assertNotNull;
 
 public class IngredientTypeTest {
     @Test
-    public void TestIngredientTypeSauce() {
+    public void testIngredientTypeSauce() {
         assertNotNull(IngredientType.valueOf("FILLING"));
     }
 
     @Test
-    public void TestIngredientTypeFilling() {
+    public void testIngredientTypeFilling() {
         assertNotNull(IngredientType.valueOf("SAUCE"));
     }
 }

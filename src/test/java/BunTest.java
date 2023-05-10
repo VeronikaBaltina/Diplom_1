@@ -31,7 +31,7 @@ public class BunTest {
     }
 
     @Test
-    public void TestGetNameAndGetPrice() {
+    public void testGetNameAndGetPrice() {
         Bun bun = new Bun(name, price);
         assertEquals("Некорректное название булочки", name, bun.getName());
         assertEquals("Некорректный прайс для булочки", price, bun.getPrice(), 0.0f);

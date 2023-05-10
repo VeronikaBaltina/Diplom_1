@@ -25,14 +25,14 @@ public class BurgerTest {
     }
 
     @Test
-    public void TestSetBuns() {
+    public void testSetBuns() {
         Bun bun = Mockito.mock(Bun.class);
         burger.setBuns(bun);
         assertEquals("Неверная булка", bun, burger.bun);
     }
 
     @Test
-    public void TestAddIngredient() {
+    public void testAddIngredient() {
         List<Ingredient> ingredients = List.of(Mockito.mock(Ingredient.class), Mockito.mock(Ingredient.class), Mockito.mock(Ingredient.class));
         for (Ingredient ingredient : ingredients) {
             burger.addIngredient(ingredient);
@@ -41,7 +41,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void TestRemoveIngredient() {
+    public void testRemoveIngredient() {
         Ingredient ingredient = Mockito.mock(Ingredient.class);
         burger.addIngredient(ingredient);
         burger.removeIngredient(0);
@@ -49,7 +49,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void TestMoveIngredient() {
+    public void testMoveIngredient() {
         Ingredient ingredient1 = Mockito.mock(Ingredient.class);
         Ingredient ingredient2 = Mockito.mock(Ingredient.class);
         Mockito.when(ingredient1.getName()).thenReturn("filling cutlet");
@@ -62,7 +62,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void TestGetPrice() {
+    public void testGetPrice() {
         Ingredient ingredient1 = Mockito.mock(Ingredient.class);
         Ingredient ingredient2 = Mockito.mock(Ingredient.class);
         Bun bun = Mockito.mock(Bun.class);
@@ -76,7 +76,7 @@ public class BurgerTest {
     }
 
     @Test
-    public void TestGetReceipt() {
+    public void testGetReceipt() {
         Ingredient ingredient1 = Mockito.mock(Ingredient.class);
         Ingredient ingredient2 = Mockito.mock(Ingredient.class);
         Bun bun = Mockito.mock(Bun.class);
